@@ -36,7 +36,7 @@ public class VDContextHolder {
                 Application application = (Application) Class.forName("android.app.ActivityThread")
                         .getMethod("currentApplication").invoke(null, (Object[]) null);
                 if (application != null) {
-                    Log.d(VDContextHolder.class.getName(), "ContextHolder is not initialed, it is recommend to initial with application context.");
+                    Log.e(VDContextHolder.class.getName(), "ContextHolder is not initialed, it is recommend to initial with application context.");
                     return application;
                 }
             }
@@ -48,7 +48,7 @@ public class VDContextHolder {
                 Application application = (Application) Class.forName("android.app.AppGlobals")
                         .getMethod("getInitialApplication").invoke(null, (Object[]) null);
                 if (application != null) {
-                    Log.d(VDContextHolder.class.getName(), "ContextHolder is not initialed, it is recommend to initial with application context.");
+                    Log.e(VDContextHolder.class.getName(), "ContextHolder is not initialed, it is recommend to initial with application context.");
                     return application;
                 }
             }
@@ -61,7 +61,7 @@ public class VDContextHolder {
                         .getMethod("systemMain").invoke(null, (Object[]) null);
                 Context context = (Context) activityThread.getClass().getMethod("getSystemContext").invoke(activityThread, (Object[]) null);
                 if (context != null) {
-                    Log.d(VDContextHolder.class.getName(), "ContextHolder is not initialed, it is recommend to initial with application context.");
+                    Log.e(VDContextHolder.class.getName(), "ContextHolder is not initialed, it is recommend to initial with application context.");
                     return context;
                 }
             }
