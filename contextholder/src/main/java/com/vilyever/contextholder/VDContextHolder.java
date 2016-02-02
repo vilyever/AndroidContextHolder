@@ -15,7 +15,7 @@ public class VDContextHolder {
 
     static Context ApplicationContext;
 
-    /* #Public Methods */
+    /* Public Methods */
     public static void initial(Context context) {
         ApplicationContext = context;
     }
