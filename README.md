@@ -17,23 +17,13 @@ Step 2. Add the dependency in the form
 
 ```gradle
 dependencies {
-  compile 'com.github.vilyever:AndroidContextHolder:1.0.3'
+  compile 'com.github.vilyever:AndroidContextHolder:1.0.4'
 }
 ```
 
 ## Usage
 ```java
-
-public class App extends Application {
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        VDContextHolder.initial(this); // initial
-    }
-}
-
-VDContextHolder.getContext(); // then call this anywhere
+ContextHolder.getContext(); // just call this anywhere
 
 ```
 

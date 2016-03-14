@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.vilyever.contextholder.VDContextHolder;
+import com.vilyever.contextholder.ContextHolder;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        System.out.println("context " + VDContextHolder.getContext());
+        System.out.println("context " + ContextHolder.getContext());
     }
 
     @Override
