@@ -17,7 +17,7 @@ Step 2. Add the dependency in the form
 
 ```gradle
 dependencies {
-  compile 'com.github.vilyever:AndroidContextHolder:1.0.4'
+  compile 'com.github.vilyever:AndroidContextHolder:1.1.0'
 }
 ```
 
